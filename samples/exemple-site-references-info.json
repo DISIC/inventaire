@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "structure": "SPM/SGMAP/DINSIC",
+  "releases": [
+    {
+      "name": "references.modernisation.gouv.fr",
+     "version": "20170901",
+      "organization": "DINSIC",
+      "description": "Le site des documents de référence pour le SI de l'Etat",
+      "permissions": {
+        "licenses": [
+        {
+          "URL": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf",
+          "name": "licence ouverte 1.0"
+        }
+      ],
+        "usageType": "open",
+        "exemptionText": null
+      },
+      "tags": [
+        "plateforme",
+        "gouvernement",
+        "référentiel général",
+        "interoperabilité"
+        "accesibilité",
+        "sécurité"
+      ],
+      "contact": {
+        "email": "references.sgmap@modernisation.gouv.fr",
+        "name": "contact pour le site references",
+        "URL": "https://twitter.com/_DINSIC"
+      },
+      "status": "Production",
+      "homepageURL": "https://references.modernisation.gouv.fr",
+      "legalURL": "http://references.modernisation.gouv.fr/mentions-legales",
+      "contactURL": "http://references.modernisation.gouv.fr/contact",
+      "languages": [
+        "html",
+        "php"
+      ],
+      "date": {
+        "created": "2014",
+        "lastModified": "2017-09-01",
+        "metadataLastUpdated": "2011-09-04"
+      },
+      "linkedUrl": [
+        {
+          "URL": "https://references.modernisation.gouv.fr/RGAA",
+          "name": "sous-partie concernant l'accessibilité"
+        },
+        {
+          "URL": "https://references.modernisation.gouv.fr/interoperabilite",
+          "name": "sous partie concernant l'accessibilité"
+        },
+        {
+          "URL": "https://modernisation.gouv.fr/",
+          "name": "site de l'organisation parent : secrétariat général de la modernisation de l'action publique",
+        },
+        {
+          "URL": "https://etalab.gouv.fr/",
+          "name": "site d'une organisation soeur : ETALAB : ouverture des données publiques"
+        }
+      ],
+      "accessibilite": {
+        "complianceURL": "http://references.modernisation.gouv.fr/declaration-de-conformite-rgaa-30",
+        "niveau": "5 etoiles"
+      },
+      "softwareStack": [
+        "apache",
+        "drupal",
+        "memCache",
+        "mariaDB"
+      ],
+      "statistique": {
+        "URL": "https://stats.references.modernisation.gouv.fr",
+        "outil": "xiti"
+      },
+      "interoperabilite":
+      {
+        "syntaxique": [
+          "html",
+          "odf",
+          "pdf"
+        ],
+        "semantique": [
+           "idpPERS"
+        ]
+      },
+    }
+  ]
+}
