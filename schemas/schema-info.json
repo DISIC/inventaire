@@ -1,0 +1,253 @@
+
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "inventaire des sites internet des Administrations (.gouv.fr, .fr, .info, .org, .com)",
+  "definitions": {},
+  "id": "url/info.json",
+  "type": "object",
+  "properties": {
+    "releases": {
+      "id": "/properties/releases",
+      "items": {
+        "id": "/properties/releases/items",
+        "properties": {
+          "accessibilite": {
+            "id": "/properties/releases/items/properties/accessibilite",
+            "properties": {
+              "complianceURL": {
+                "description": "Chemin permettant d'accéder à la déclaration de conformité",
+                "id": "/properties/releases/items/properties/accessibilite/properties/complianceURL",
+                "type": "string"
+              },
+              "niveau": {
+                "description": "niveau d'accessibilité atteint par le site, mesuré en nombre d'étoiles",
+                "id": "/properties/releases/items/properties/accessibilite/properties/niveau",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "contact": {
+            "id": "/properties/releases/items/properties/contact",
+            "properties": {
+              "URL": {
+                "description": "URL du compte twitter/facebook/mastodon/... du contact",
+                "id": "/properties/releases/items/properties/contact/properties/URL",
+                "type": "string"
+              },
+              "email": {
+                "description": "mail du contact",
+                "id": "/properties/releases/items/properties/contact/properties/email",
+                "type": "string"
+              },
+              "name": {
+                "description": "nom du contact",
+                "id": "/properties/releases/items/properties/contact/properties/name",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "contactURL": {
+            "description": "chemin vers la page de contact du site.",
+            "id": "/properties/releases/items/properties/contactURL",
+            "type": "string"
+          },
+          "date": {
+            "id": "/properties/releases/items/properties/date",
+            "properties": {
+              "created": {
+                "description": "année ou date de création du site.",
+                "id": "/properties/releases/items/properties/date/properties/created",
+                "type": "string"
+              },
+              "lastModified": {
+                "description": "date de dernière modification du site.",
+                "id": "/properties/releases/items/properties/date/properties/lastModified",
+                "type": "string"
+              },
+              "metadataLastUpdated": {
+                "description": "date de dernière modification des metadata du site, de ce fichier par exemple, permet de distinguer des mises à jour de contenu.",
+                "id": "/properties/releases/items/properties/date/properties/metadataLastUpdated",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "description": {
+            "description": "description du site.",
+            "id": "/properties/releases/items/properties/description",
+            "type": "string"
+          },
+          "homepageURL": {
+            "description": "chemin URL vers la racine du site décrit dans ce fichier.",
+            "id": "/properties/releases/items/properties/homepageURL",
+            "type": "string"
+          },
+          "interoperabilite": {
+            "id": "/properties/releases/items/properties/interoperabilite",
+            "properties": {
+              "semantique": {
+                "id": "/properties/releases/items/properties/interoperabilite/properties/semantique",
+                "items": {
+                  "description": "objet métier, défini dans le RGI dans le volet sémantique, et utilisé sur ce site.",
+                  "id": "/properties/releases/items/properties/interoperabilite/properties/semantique/items",
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "syntaxique": {
+                "id": "/properties/releases/items/properties/interoperabilite/properties/syntaxique",
+                "items": {
+                  "description": "objet métier, défini dans le RGI dans le volet synthaxique, et utilisé sur ce site.",
+                  "id": "/properties/releases/items/properties/interoperabilite/properties/syntaxique/items",
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          },
+          "languages": {
+            "id": "/properties/releases/items/properties/languages",
+            "items": {
+              "description": "technologies ou langages utilisés par ce site.",
+              "id": "/properties/releases/items/properties/languages/items",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "legalURL": {
+            "description": "chemin URL vers la page de mentions légales du site.",
+            "id": "/properties/releases/items/properties/legalURL",
+            "type": "string"
+          },
+          "linkedUrl": {
+            "id": "/properties/releases/items/properties/linkedUrl",
+            "items": {
+              "id": "/properties/releases/items/properties/linkedUrl/items",
+              "properties": {
+                "URL": {
+                  "description": "chemin URL vers une page liée.",
+                  "id": "/properties/releases/items/properties/linkedUrl/items/properties/URL",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "nom de la page liée.",
+                  "id": "/properties/releases/items/properties/linkedUrl/items/properties/name",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "name": {
+            "description": "nom de cette mise à jour du site.",
+            "id": "/properties/releases/items/properties/name",
+            "type": "string"
+          },
+          "organization": {
+            "description": "Organisation responsable de cette mise à jour du site.",
+            "id": "/properties/releases/items/properties/organization",
+            "type": "string"
+          },
+          "permissions": {
+            "id": "/properties/releases/items/properties/permissions",
+            "properties": {
+              "exemptionText": {
+                "description": "reference vers le texte qui autorise l'exception.",
+                "id": "/properties/releases/items/properties/permissions/properties/exemptionText",
+                "type": "null"
+              },
+              "licenses": {
+                "id": "/properties/releases/items/properties/permissions/properties/licenses",
+                "items": {
+                  "id": "/properties/releases/items/properties/permissions/properties/licenses/items",
+                  "properties": {
+                    "URL": {
+                      "description": "chemin URL vers la licence utilisée pour ce site.",
+                      "id": "/properties/releases/items/properties/permissions/properties/licenses/items/properties/URL",
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "nom de la licence utilisée pour ce site.",
+                      "id": "/properties/releases/items/properties/permissions/properties/licenses/items/properties/name",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "usageType": {
+                "description": "usage nominale des informations de ce site.",
+                "id": "/properties/releases/items/properties/permissions/properties/usageType",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "softwareStack": {
+            "id": "/properties/releases/items/properties/softwareStack",
+            "items": {
+              "description": "logiciel utilisé par le site.",
+              "id": "/properties/releases/items/properties/softwareStack/items",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "statistique": {
+            "id": "/properties/releases/items/properties/statistique",
+            "properties": {
+              "URL": {
+                "description": "chemin URL permettant d'accéder aux statistiques de fréquentation du site.",
+                "id": "/properties/releases/items/properties/statistique/properties/URL",
+                "type": "string"
+              },
+              "outil": {
+                "description": "nom de l'outil de suivi de fréquentation du site.",
+                "id": "/properties/releases/items/properties/statistique/properties/outil",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "status": {
+            "description": "statut du site, par exemple : en production, en test, fermé au public, en developpement,...",
+            "id": "/properties/releases/items/properties/status",
+            "type": "string"
+          },
+          "tags": {
+            "id": "/properties/releases/items/properties/tags",
+            "items": {
+              "description": "descripteur de contenu du site.",
+              "id": "/properties/releases/items/properties/tags/items",
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "version": {
+            "description": "version de la la derniere mise à jour.",
+            "id": "/properties/releases/items/properties/version",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "structure": {
+      "description": "structure administrative responsable du site.",
+      "id": "/properties/structure",
+      "type": "string"
+    },
+    "version": {
+      "default": "1.0.0",
+      "description": "version du site.",
+      "id": "/properties/version",
+      "type": "string"
+    }
+  }
+}
